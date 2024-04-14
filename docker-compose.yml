@@ -10,4 +10,4 @@ services:
       volumes:
         - ./hrpanorama-task/:/usr/src/app
       ports:
-        - "8080:9000"
+        - "8090:9000"
