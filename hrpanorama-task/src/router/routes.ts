@@ -5,7 +5,15 @@ const routes: RouteRecordRaw[] = [
     path: '/',
     component: () => import('layouts/MainLayout.vue'),
     children: [{ path: '', component: () => import('pages/IndexPage.vue') }],
+    meta: { doesntRequireAuth: true }
   },
+  {
+    path: '/dashboard',
+    component: () => import('layouts/MainLayout.vue'),
+    children: [{ path: '', component: () => import('pages/DashboardPage.vue') }],
+    meta: { doesntRequireAuth: false }
+  },
+
 
   // Always leave this as last one,
   // but you can also remove it
