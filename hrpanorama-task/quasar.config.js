@@ -89,6 +89,7 @@ module.exports = configure(function (/* ctx */) {
         'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept',
         'Access-Control-Allow-Credentials': 'true',
       },
+      proxy: 'http://localhost:8080/',
     },
 
     // https://v2.quasar.dev/quasar-cli-vite/quasar-config-js#framework
